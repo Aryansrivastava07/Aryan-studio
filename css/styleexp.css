@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 2s;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.mob {
+    display: none;
+}
+
+.mode {
+    text-align: right;
+    color: white;
+    font-size: 3vh;
+    margin: 10vh 5vh;
+    position: sticky;
+    top: 0vh;
+}
+.mode:hover{
+    cursor:pointer;
+}
+
+.navbar {
+    z-index: 10000;
+    position: absolute;
+    height: 4.3vw;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0vh;
+    backdrop-filter: blur(20px);
+}
+
+.address {
+    margin-top: 20vh;
+    text-align: right;
+    margin-right: 5vw;
+    font-size: 4vh;
+    font-family: 'Akaya Telivigala';
+    color: white;
+
+}
+
+.navlist {
+    font-size: 1.6vw;
+    display: grid;
+    padding-left: 2vw;
+    line-height: 4vw;
+    grid-template-columns: 45vw 9vw 11vw 15vw auto;
+    font-weight: 500;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    color: white;
+    text-decoration: none;
+}
+
+.preload {
+    content: url(../assets/load.gif) url(../assets/2.jpg) url(../assets/20.avif) url(../assets/45.jpg) url(../assets/55.webp) url(../assets/75.jpg) url(../assets/85.jpg) url(../assets/photo1.jpg) url(../assets/photo2.jpg) url(../assets/photo3.jpg) url(../assets/photo4.jpg) url(../assets/photo5.jpg) url(../assets/photo6.jpg) url(../assets/photo7.jpg) url(../assets/photo8.jpg) url(../assets/photo9.jpg) url(../assets/photo10.jpg) url(../assets/photo11.jpg) url(../assets/video1.jpg) url(../assets/video2.jpg) url(../assets/video3.jpg) url(../assets/video4.jpg) url(../assets/video5.jpg) url(../assets/video6.jpg) url(../assets/video7.jpg) url(../assets/video8.jpg) url(../assets/video9.jpg) url(../assets/video10.jpg) url(../assets/video11.jpg);
+    visibility: hidden;
+}
+
+.back {
+    display: inline-block;
+    border-radius: 2vw;
+    width: 100vw;
+    height: 120vh;
+    animation: change 50s infinite 2s ease-in-out;
+}
+
+@keyframes change {
+    2% {
+        background: url(../assets/2.jpg);
+        background-size: 100vw 120vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    20% {
+        background: url(../assets/20.avif);
+        /*fine*/
+        background-size: 100vw 120vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    40% {
+        background: url(../assets/45.jpg);
+        background-size: 100vw 120vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    55% {
+        background: url(../assets/55.webp);
+        /*fine*/
+        background-size: 100vw 120vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    70% {
+        background: url(../assets/75.jpg);
+        background-size: 100vw 120vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    85% {
+        background: url(../assets/85.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100vw 120vh;
+    }
+}
+
+/* .video{
+    width: 100vw;
+    height:120vh;
+    position: absolute;
+    opacity: 0.3;
+    object-fit: cover;
+    animation-name:cgc;
+    animation-duration: 31s ;
+    animation-fill-mode: forwards;
+}
+@keyframes cgc {
+        
+        0%{opacity: 0.3;
+        }
+        90%{
+            opacity: 0.3;
+        }
+        98%{
+            opacity: 0;
+        }
+        100%{
+           visibility: hidden;
+           opacity: 0;
+           display: none;
+        }   
+    } */
+
+.head {
+    color: rgb(245, 245, 245);
+    font-size: 18vh;
+    text-align: center;
+    font-family: "sofia", sans-serif;
+    margin-top: 20vh;
+    border-radius: 90vh 20vh;
+    z-index: 10000;
+}
+
+.head2 {
+    padding-top: 5vh;
+    text-align: center;
+    font-family: "sofia", sans-serif;
+    color: rgba(245, 245, 245, 0.75);
+    font-size: 3vw;
+}
+
+.availbutton {
+    display: block;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 3.5vh;
+    background: linear-gradient(30deg, red, blue);
+    color: white;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2vh;
+    border: none;
+    border-radius: 2vh;
+    transition: 0.5s ease-in;
+}
+
+.goup {
+    position: sticky;
+    top: 85vh;
+    margin-left: 95.8vw;
+    margin-right: 0.4vw;
+    padding: 0.8vw;
+    background-color: rgba(5, 17, 49, 0);
+    border-radius: 50em;
+}
+
+.goup img {
+    filter: grayscale();
+    aspect-ratio: 1;
+}
+
+.goup img:hover {
+    filter: none;
+}
+
+.container {
+    text-align: center;
+    font-size: 4vh;
+    background-color: rgba(249, 235, 235, 0.846);
+    margin: 7vh 5vw;
+    padding: 5vh 3vw;
+    font-family: "Raleway";
+    border-radius: 1.5vh;
+    box-shadow: 0px 0px 1.5px white,
+        0px 0px 8px white;
+    color: black;
+}
+
+.goup+.container {
+    margin-top: 0vh;
+}
+
+.who-t,
+.services-t {
+    color: rgba(0, 0, 0, 0.65);
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 30vw 10vw 10vw auto auto;
+    gap: 3vw;
+    align-items: center;
+}
+
+#photoskill-content1,
+#photoskill-content2,
+#photoskill-content3,
+#photoskill-content4 {
+    display: none;
+}
+
+.container h3 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+#photoskill1 {
+    grid-column-start: 2;
+}
+
+.pic-img {
+    background: url(../assets/photo1.jpg), url(../assets/load.gif);
+    background-size: 30vw 40vh;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 30vw;
+    animation: photo 60s 6s infinite ease-in-out alternate;
+    border-radius: 40px;
+    box-shadow: 0px 0px 36px 6px #000000;
+}
+
+@keyframes photo {
+    0% {
+        background: url(../assets/photo1.jpg);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    5% {
+        background: url(../assets/photo2.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    20% {
+        background: url(../assets/photo3.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    30% {
+        background: url(../assets/photo4.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    40% {
+        background: url(../assets/photo5.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background: url(../assets/photo6.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    60% {
+        background: url(../assets/photo7.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    70% {
+        background: url(../assets/photo8.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    80% {
+        background: url(../assets/photo9.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    90% {
+        background: url(../assets/photo10.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background: url(../assets/photo11.jpg), url(../assets/load.gif);
+        background-size: 30vw 40vh;
+        background-repeat: no-repeat;
+    }
+}
+
+.flex {
+    display: flex;
+    overflow: scroll;
+    align-items: center;
+    scroll-snap-type: x proximity;
+    flex: none;
+}
+.flex a{
+    scroll-snap-align: start;
+	scroll-snap-stop: normal;
+}
+
+.pic-high img {
+    display: flex-item;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 6px #211b35a7;
+    margin: 5vw 4vw;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+.contact h3{
+    padding-bottom: 20px;
+}
+.pic-high img:hover {
+    height: 300px;
+    width: 400px;
+    transition: 1s;
+    transition-delay: 1s;
+ }
+
+.navlist li a:hover {
+    text-shadow: rgb(255, 255, 255) 0px 0px 1px, rgb(255, 255, 255) 0px 0px 2px, rgb(255, 0, 255) 0px 0px 6px, rgb(255, 0, 255) 0px 0px 8px;
+}
+
+.availbutton:hover {
+    box-shadow: rgb(255, 255, 255) 0px 0px 1px, rgb(255, 0, 255) 0px 0px 5px, rgb(255, 0, 255) 0px 0px 8px;
+}
+
+.navlist li :active {
+    font-size: 3.2vh;
+}
+
+.navlist a img:active,
+.availbutton:active {
+    transform: scale(0.85);
+}

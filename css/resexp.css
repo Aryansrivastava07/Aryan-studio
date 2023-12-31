@@ -1,0 +1,193 @@
+@media (max-width:600px) {
+    .navbar {
+        display: none;
+    }
+
+    .mob {
+        height: 6vw;
+        width: 8vw;
+        margin-top: 1vw;
+        margin-left: 3vw;
+        display: block;
+        position: fixed;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 30vw auto;
+        align-items: center;
+    }
+    .container h3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-left: 10vw;
+    }
+    .pic-img {
+        margin-left: 10vw;
+        margin-top: 10vh;
+        height: 40vh;
+        width: 60vw;
+        margin-bottom: 10vh;
+        background-size: 60vw 40vh;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .services-t{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #photoskill1{
+        grid-column-start: 1;
+    }
+    #photoskill-content1,#photoskill-content2,#photoskill-content3,#photoskill-content4{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    @keyframes photo {
+        0% {
+            background: url(../assets/photo1.jpg);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        5% {
+            background: url(../assets/photo2.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        20% {
+            background: url(../assets/photo3.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        30% {
+            background: url(../assets/photo4.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        40% {
+            background: url(../assets/photo5.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        50% {
+            background: url(../assets/photo6.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        60% {
+            background: url(../assets/photo7.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        70% {
+            background: url(../assets/photo8.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        80% {
+            background: url(../assets/photo9.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        90% {
+            background: url(../assets/photo10.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+
+        100% {
+            background: url(../assets/photo11.jpg), url(../assets/load.gif);
+            background-size: 60vw 40vh;
+            background-repeat: no-repeat;
+        }
+    }
+    @keyframes change {
+        2% {
+            background: url(../assets/mob1.jpg);
+            background-size:100vw 120vh; 
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+    
+        20% {
+            background: url(../assets/20.avif);/*fine*/
+            background-size:100vw 120vh;
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+    
+        40% {
+            background: url(../assets/45.jpg);
+            background-size:100vw 120vh;
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+    
+        55% {
+            background: url(../assets/55.webp);/*fine*/
+            background-size:100vw 120vh;
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+    
+        70% {
+            background: url(../assets/75.jpg);
+            background-size:100vw 120vh;
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+    
+        85% {
+            background: url(../assets/85.jpg);
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-size:100vw 120vh;
+        }
+    }
+    
+
+   .head {
+        font-size: 13vw;
+    }
+
+    /* Paragraph */
+   .head p {
+        font-size: 3.5vw !important;
+    }
+
+    .address {
+        font-size: 4vw;
+    }
+
+    /* Head2 */
+    .head2 {
+        font-size: 5vw;
+    }
+
+    .pic-high img{
+        margin: 9vh 8vh;;
+    }
+    .pic-high img:hover{
+        width: 375px;
+        height: 262px;
+    }
+}
+
+@media (max-width:636px) {
+
+    /* Head */
+   .head {
+        font-size: 16vw;
+    }
+
+}

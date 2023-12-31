@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.mob {
+    display: none;
+}
+
+.navbar {
+    position: sticky;
+    height: 9vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0vh;
+    backdrop-filter: blur(20px);
+}
+.address{
+    margin-top: 35vh;
+    text-align: right;
+    margin-right: 5vw;
+    font-size: 4vh;
+    font-family: 'Akaya Telivigala';
+    color: white;
+
+}
+
+.navlist {
+    font-size: 1.6vw;
+    display: grid;
+    padding-left: 2vw;
+    /* font-family: 'Akaya Telivigala'; */
+    line-height: 4vw;
+    grid-template-columns: 45vw 9vw 11vw 15vw auto;
+    font-weight: 500;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    color: white;
+    text-decoration: none;
+}
+
+.preload {
+    content: url(https://source.unsplash.com/400x250/?camera,photoskill) url(https://source.unsplash.com/400x250/?camera,photo) url(https://source.unsplash.com/400x250/?dslr) url(https://source.unsplash.com/400x250/?sonycamera) url(https://source.unsplash.com/400x250/?cannon) url(https://source.unsplash.com/400x250/?wedding) url(https://source.unsplash.com/400x250/?camera) url(https://source.unsplash.com/400x250/?camera,photography) url(https://source.unsplash.com/400x250/?camera,service) url(https://source.unsplash.com/400x250/?camera,pic) url(https://source.unsplash.com/400x250/?camera,videography);
+    visibility: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 120vh;
+    position: sticky;
+     top: -111vh; 
+    animation: change 50s infinite;
+}
+
+@keyframes change {
+    0% {
+        background: url(https://images.unsplash.com/photo-1535540878298-a155c6d065ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmlkZW9ncmFwaHl8ZW58MHx8MHx8&w=1000&q=80), rgba(1, 0, 0, 0.2);
+        background-blend-mode: color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    20% {
+        background: url(https://i.pinimg.com/originals/6d/d1/18/6dd1181dbdeeb78046b88480d7eee35d.jpg), rgba(1, 0, 0, 0.2);
+        background-blend-mode: color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    40% {
+        background: url(https://images.unsplash.com/photo-1625690303837-654c9666d2d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmlkZW9ncmFwaHl8ZW58MHx8MHx8&w=1000&q=80), rgba(1, 0, 0, 0.2);
+        background-blend-mode: color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    60% {
+        background: url(https://wallpaperaccess.com/full/4215922.jpg), rgba(1, 0, 0, 0.2);
+        background-blend-mode: color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    80% {
+        background: url(https://t3.ftcdn.net/jpg/02/12/57/72/360_F_212577233_0bDzQE4LJ0DjmLhuCqYtLHv4n54T7CLy.jpg), rgba(1, 0, 0, 0.2);
+        background-blend-mode: color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(https://images.unsplash.com/photo-1535540878298-a155c6d065ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmlkZW9ncmFwaHl8ZW58MHx8MHx8&w=1000&q=80), rgba(1, 0, 0, 0.2);
+        background-blend-mode: color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.head {
+    color: rgba(245, 245, 245, 0.85);
+    font-size: 15vh;
+    text-align: center;
+    font-family: "nabla",cursive;
+    margin-top: 25vh;
+}
+
+.head2 {
+    text-align: center;
+    font-family: "sofia", sans-serif;
+    color: rgba(245, 245, 245, 0.75);
+    font-size: 5vh;
+
+}
+
+
+
+.who {
+    text-align: center;
+    font-size: 4vh;
+    background-color: rgba(249, 235, 235, 0.846);
+    margin: 10vh 5vw;
+    padding: 5vh 3vw;
+    font-family: "Raleway";
+    border-radius: 1.5vh;
+    box-shadow: 0px 0px 1.5px white,
+        0px 0px 8px white;
+    color: black;
+}
+
+.who-t,
+.photography-t {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.photography,.videography {
+    display: grid;
+    grid-template-columns: 30vw auto;
+    gap: 3vw;
+    align-items: center;
+}
+
+.photography h3,.videography h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.who-t,
+.videography-t {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.pic-img {
+    background: url(https://source.unsplash.com/400x250/?camera,photoskill);
+    background-size: cover;
+    height: 40vh;
+    width: 30vw;
+    animation: photo 60s 6s infinite ease-in-out;
+    border-radius: 40px;
+    box-shadow: 0px 0px 36px 6px #000000;
+}
+
+@keyframes photo {
+    10% {
+        background: url(https://source.unsplash.com/400x250/?camera,photo), url(../assets/as.png);
+    }
+
+    20% {
+        background: url(https://source.unsplash.com/400x250/?dslr), url(../assets/as.png);
+    }
+
+    30% {
+        background: url(https://source.unsplash.com/400x250/?sonycamera), url(../assets/as.png);
+    }
+
+    40% {
+        background: url(https://source.unsplash.com/400x250/?cannon), url(../assets/as.png);
+    }
+
+    50% {
+        background: url(https://source.unsplash.com/400x250/?wedding), url(../assets/as.png);
+    }
+
+    60% {
+        background: url(https://source.unsplash.com/400x250/?camera), url(../assets/as.png);
+    }
+
+    70% {
+        background: url(https://source.unsplash.com/400x250/?camera,photography), url(../assets/as.png);
+    }
+
+    80% {
+        background: url(https://source.unsplash.com/400x250/?camera,service), url(../assets/as.png);
+    }
+
+    90% {
+        background: url(https://source.unsplash.com/400x250/?camera,pic), url(../assets/as.png);
+    }
+
+    100% {
+        background: url(https://source.unsplash.com/400x250/?camera,videography), url(../assets/as.png);
+    }
+}
+
+.vid-img {
+    background: url(https://source.unsplash.com/400x250/?camera,videoskill);
+    background-size: cover;
+    height: 40vh;
+    width: 30vw;
+    animation: video 60s 6s infinite ease-in-out;
+    border-radius: 40px;
+    box-shadow: 0px 0px 36px 6px #000000;
+}
+
+@keyframes video {
+    10% {
+        background: url(https://source.unsplash.com/400x250/?camera,photo), url(../assets/as.png);
+    }
+
+    20% {
+        background: url(https://source.unsplash.com/400x250/?dslr), url(../assets/as.png);
+    }
+
+    30% {
+        background: url(https://source.unsplash.com/400x250/?sonycamera), url(../assets/as.png);
+    }
+
+    40% {
+        background: url(https://source.unsplash.com/400x250/?cannon), url(../assets/as.png);
+    }
+
+    50% {
+        background: url(https://source.unsplash.com/400x250/?wedding), url(../assets/as.png);
+    }
+
+    60% {
+        background: url(https://source.unsplash.com/400x250/?camera), url(../assets/as.png);
+    }
+
+    70% {
+        background: url(https://source.unsplash.com/400x250/?camera,photography), url(../assets/as.png);
+    }
+
+    80% {
+        background: url(https://source.unsplash.com/400x250/?camera,service), url(../assets/as.png);
+    }
+
+    90% {
+        background: url(https://source.unsplash.com/400x250/?camera,pic), url(../assets/as.png);
+    }
+
+    100% {
+        background: url(https://source.unsplash.com/400x250/?camera,videography), url(../assets/as.png);
+    }
+}
+
+
+
+.navlist li a:hover {
+    text-shadow: rgb(255, 255, 255) 0px 0px 1px, rgb(255, 255, 255) 0px 0px 2px, rgb(255, 0, 255) 0px 0px 6px, rgb(255, 0, 255) 0px 0px 8px;
+}
+
+.navlist li :active {
+    font-size: 3vh;
+}
+
+.navlist a img:active {
+    transform: scale(0.9);
+}
