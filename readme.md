@@ -23,7 +23,7 @@ Welcome to my Photography and Videography Portfolio! This website showcases a co
 
 ## Live Demo
 
-[www.aryansrivastava07.github.io/aryan-studio/html]
+[https://aryansrivastava07.github.io/Aryan-studio/html/]
 
 
 ## Technologies Used
